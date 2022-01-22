@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <script src="https://kit.fontawesome.com/f5428d936a.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <ul class="left-nav">
+                <li><a href="#"><span></span>SIPIN</a></li>
+            </ul>
+            <ul class="right-nav">
+                <li><a href="#"><span></span>Home</a></li>
+                <li><a href="#"><span></span>About</a></li>
+                <li><a href="#"><span></span>Login</a></li>
+                <li><a href="#"><span></span>Register</a></li>
+            </ul>
+            <ul class="cart">
+                <li><span></span><i class="fas fa-search"></i> <input type="text" href="#" placeholder="Search"></li>
+            </ul>
+        </div>
+        <div class="article">
+            <h1 class="article-title">Natural Ecosystem</h1>
+            <div class="article-text">
+                <p>Welcome to Minifantasy - Builders, an asset pack in the line of Crafting And Professions with all you need to add building mechanics to your game. Inside the pack, you will find flexible assets to create your own building mechanics. This
+                    asset pack has been made with granularity in mind: You will be able to make from simple one-step construction mechanics to complex building systems where you need to go through various construction stages (digging foundations, setting
+                    up scaffolding and in-progress construction sections). The pack also include building animations for characters and working animations for five construction-related crafting stations.
+                </p>
+                <div class="article-pages">
+                    <a href="#">Prev</a>
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">Next</a>
+                </div>
+                <div class="page-buttons">
+                    <a href="#">Prev</a>
+                    <a href="#">/Next</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+<style>
+     :root {
+        --background-width: 30%;
+        --article-width: 50%;
+        --article-height: 40vh;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url("green_bg.png");
+        background-repeat: no-repeat;
+        background-size: var(--background-width) 100000000000000vh;
+        background-position-x: right;
+    }
+    
+    input {
+        border: none;
+        outline: none;
+    }
+    
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .navbar ul li {
+        list-style: none;
+        display: inline-block;
+    }
+    
+    .navbar ul li a {
+        text-decoration: none;
+        color: #AAC992;
+        position: relative;
+    }
+    
+    .navbar ul li a span {
+        background-color: #AAC992;
+        width: 0%;
+        height: 3px;
+        position: absolute;
+        bottom: -5px;
+        transition: 0.5s;
+    }
+    
+    .navbar .right-nav {
+        padding: 1rem;
+        margin: 0;
+        padding-right: 0;
+    }
+    
+    .navbar .right-nav li {
+        padding-right: 2rem;
+    }
+    
+    .navbar .right-nav li a {
+        font-size: 1.4rem;
+    }
+    
+    .navbar .left-nav {
+        padding: 1rem;
+        margin: 0;
+    }
+    
+    .navbar .left-nav li a {
+        font-size: 2rem;
+    }
+    
+    .cart {
+        position: relative;
+        padding: 1rem;
+        padding-right: 1rem;
+        margin: 0;
+    }
+    
+    .cart li {
+        list-style: none;
+    }
+    
+    .cart li input {
+        background-color: #AAC992;
+        color: white;
+        font-size: 1.1rem;
+    }
+    
+    .cart li input::placeholder {
+        color: white;
+        font-size: 1.1rem;
+    }
+    
+    .cart span {
+        width: 50%;
+        background-color: #000000;
+        height: 1px;
+        position: absolute;
+        left: 0;
+        bottom: 25px;
+    }
+    
+    .article {
+        width: var(--article-width);
+        height: var(--article-height);
+        margin-left: 7rem;
+    }
+    
+    .article-title {
+        width: 10%;
+        font-size: 2rem;
+        margin-bottom: 0rem;
+        color: #242323;
+    }
+    
+    .article-text {
+        font-size: 1.3rem;
+        color: #544f4f;
+        margin-top: 0.5rem;
+        position: relative;
+        min-height: 57vh;
+    }
+    
+    .article-text .page-buttons {
+        background-color: #E5E5E5;
+        position: absolute;
+        bottom: -5rem;
+        left: 40rem;
+        height: 2rem;
+        width: 5rem;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+    
+    .article-text .page-buttons a {
+        text-decoration: none;
+        color: #AAC992;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    
+    .article-text .article-pages {
+        text-decoration: none;
+        color: white;
+        position: absolute;
+        bottom: -4rem;
+        right: -31rem;
+    }
+    
+    .article-text .article-pages a {
+        margin-right: 0.5rem;
+        color: #544F4F;
+        text-decoration: none;
+        font-size: 1.3rem;
+    }
+</style>
+
+</html>
